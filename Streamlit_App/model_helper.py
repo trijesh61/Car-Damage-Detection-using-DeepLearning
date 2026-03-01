@@ -42,7 +42,9 @@ def predict(image_pth):
     global trained_model
     if trained_model is None:
         trained_model=CarClassifierCNNResNet()
-        trained_model.load_state_dict(torch.load("Model/saved_model.pth"))
+        import os
+        model_path = os.path.join(os.path.dirname(__file__), "Model", "saved_model.pth")
+        trained_model.load_state_dict(torch.load(model_path) )
 
         trained_model.eval()
     with torch.no_grad():
