@@ -1,2 +1,15 @@
-Streamlit App\__pycache__
-FastApi-Server\__pycache__
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+
+# VSCode
+.vscode/
+
+# Mac
+.DS_Store
