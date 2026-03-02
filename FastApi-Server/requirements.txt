@@ -4,3 +4,5 @@ torchvision==0.20.1
 pillow==12.1.0
 numpy==1.26.4
 fastapi==0.133.0
+uvicorn[standard]
+python-multipart
