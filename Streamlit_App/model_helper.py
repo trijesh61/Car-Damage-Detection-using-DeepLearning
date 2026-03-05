@@ -66,7 +66,7 @@ transform = transforms.Compose([
 # Load Model
 # -------------------------------
 def load_model():
-    global trained_model
+    global trained_model 
 
     if trained_model is None:
         trained_model = CarClassifierCNNResNet()
