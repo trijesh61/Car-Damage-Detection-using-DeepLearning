@@ -71,12 +71,13 @@ def load_model():
     if trained_model is None:
         trained_model = CarClassifierCNNResNet()
 
+        import os
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        model_path = os.path.join(BASE_DIR, "Model", "saved_model.pth")
+
         trained_model.load_state_dict(
-            torch.load(
-                "Model/saved_model.pth",
-                map_location=device
+            torch.load(model_path, map_location=device)
             )
-        )
 
         trained_model.to(device)
         trained_model.eval()
