@@ -35,7 +35,7 @@ Upload an image of a car, and the model will predict:
 ## 🧠 Model Overview
 
 - **Architecture:** ResNet50 (Transfer Learning)
-- **Dataset Size:** ~1700 images
+- **Dataset Size:** ~2300 images
 - **Number of Classes:** 6
 - **Validation Accuracy:** ~80%
 
